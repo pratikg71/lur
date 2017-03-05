@@ -9,7 +9,7 @@ import {
 } from './hero.service';
 import{OnInit} from '@angular/core';
 
-//import {Hero} from './hero';
+
 export class Hero {
   id: number;
   name: string;
@@ -102,10 +102,6 @@ export class HeroesComponent implements OnInit{
   getHeroes(): void {
    this.heroService.getHeroes().then(heroes => this.heroes = heroes);
   }
-
-
-
-
 
   selectedHero: Hero;
   onSelect(hero: Hero) {
