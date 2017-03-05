@@ -15,6 +15,7 @@ const HEROES: Hero[] = [
 import {
   Component
 } from '@angular/core';
+import { HeroDetailComponent } from './hero-detail.component';
 
 
 //import {Hero} from './hero';
@@ -101,6 +102,8 @@ export class Hero {
   </li>
 </ul>
 
+
+<my-hero-detail [hero]="selectedHero"></my-hero-detail>
 
 
   `,
